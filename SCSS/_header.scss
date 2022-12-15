@@ -1,0 +1,126 @@
+body{
+    background-color: black;
+}
+header{
+       position: absolute;
+        width: 100%;
+        height: 9.6rem;
+        display: flex;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        z-index: 50;
+       .container{
+        justify-content: space-between; 
+        display: flex;  
+        align-items: center;
+        z-index: 70;
+        .left{
+            display: flex;
+            align-items: center;
+            gap: 3.4rem;
+            margin-left: -0.6rem;
+           .logo{
+                margin-right: 8rem;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+               
+           }
+           &::after{
+            display: flex;
+            content: "";
+            width: 4.3rem;
+            border-top: 2px solid #00AEFF;
+            position: absolute;
+            bottom: -0.2rem;
+            z-index: 50;
+        }        
+        }
+        .item1{
+          gap:8rem;
+        } 
+        .seta{
+            display: flex;
+            margin-left: 5.5rem;
+            margin-top: -1.4rem;
+            margin-left: 7.5rem;
+        }
+        .seta2{
+            display: flex;
+            margin-left: 9rem;
+            margin-top: -1.4rem;
+        }
+    }
+   
+    .right{
+        margin-left: 36.6rem;
+        padding: 0px 1.6rem;
+        .container{
+            margin-left: -0.2em;
+            .bnt-primary{
+               border: 0.1rem solid;
+               margin: 1.6rem;
+               display: flex;
+               align-items: center;
+               flex-direction: row;
+               justify-content: center;
+               gap: 0.3rem;
+               border-radius: 0.4rem;
+               width: 11.5rem;
+               line-height: 4.1rem;
+              
+            }
+            .bnt-primary:hover{
+                border: 0.1rem solid;
+                margin: 1.6rem;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: center;
+                gap: 0.8rem;
+                border-radius: 0.4rem;
+                width: 11.569rem;
+                line-height: 4.1rem;
+                background: #ffffff;
+                color: black;
+                transition: color 0.3s, background-color 0.3s;
+            }
+            @media (max-width: 991px) {
+                header .left-container nav {
+                  display: none;
+                }
+                header .right-container .bnt-primary {
+                  display: block;
+                  margin-left: 8.9rem;
+                }
+              }
+              @media (max-width: 560px) {
+                header {
+                  height: 8rem;
+                }
+                header .left .logo {
+                  max-width: 6.9rem;
+                }
+                header .right{
+                  display: none;
+                }
+              }
+        }
+        .bnt-second{
+            display: flex;
+            background: #00AEFF;
+            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+            gap: 0.8rem;
+            border-radius: 0.4rem;
+            width: 10.7rem;
+            line-height: 4.3rem;
+        }
+        .bnt-second:hover{
+            background: #40C2FF;
+        }
+       
+    }
+}
