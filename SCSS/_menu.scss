@@ -34,6 +34,9 @@
             } 
         }
     }
+    @media (max-width:1100px) {
+        visibility: hidden;
+    }
 }
 .esportes{
     position: absolute;
@@ -70,6 +73,8 @@
             } 
         }
     }
+    @media (max-width:1100px) {
+        visibility:hidden ;
 }
 .font4{
     width: 100%;
@@ -93,7 +98,6 @@
         }
     }
 }
-
 .login{
     display: flex;
     align-items: center;
@@ -150,6 +154,7 @@
             display: flex;
             align-items: center;
             background-color: #00AEFF;
+            border-radius: 0.4rem;
             margin-top: 0.8rem;
             width: 42.6rem;
             justify-content: center;
@@ -157,6 +162,9 @@
             height: 5.2rem;
             font-size: 1.6rem;
             font-weight: 600;
+        }
+        #conect:hover{
+            background: #40C2FF;
         }
         p{
             padding-top: 4.1rem;
@@ -186,4 +194,5 @@
         }
 
     }
+}
 }

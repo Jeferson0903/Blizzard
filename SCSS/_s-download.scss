@@ -10,7 +10,7 @@
         position: relative;
         width: 100%;
         max-width: 133rem;
-        padding: 0 15px;
+        padding: 0 1.5rem;
         margin: 0 auto;
     }       
     .text-left{
@@ -30,6 +30,9 @@
             line-height: 110.2%;
             color: #FFFFFF;
             margin-bottom: 3rem;
+            @media (max-width:722px){
+              font-size: 28px;
+          }
         }
         @media (max-width: 991px) {
             .s-download .text-left {
